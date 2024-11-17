@@ -12,6 +12,7 @@ jobs:
       SYNK_WITH_UPSTREAM: ${{ vars.SYNK_WITH_UPSTREAM }}
     steps:
       - uses: actions/checkout@v3
+        if: env.SYNK_WITH_UPSTREAM == 'true'
       - name: Sync with upstream
         if: env.SYNK_WITH_UPSTREAM == 'true'
         run: |
