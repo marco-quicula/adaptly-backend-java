@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="execute-local-with-docker" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" value="local,docker" />
+    <module name="adaptly" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.myvirtualhub.adaptly.AdaptlyBackendJavaApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
