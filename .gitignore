@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ### ALL ###
-!/db/mongo/secrets/db_root_password.txt
+/db/mongo/secrets/db_root_password.txt

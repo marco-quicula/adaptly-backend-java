@@ -6,7 +6,7 @@ networks:
 
 services:
   generate-password:
-    image: busybox
+    image: busybox:stable
     volumes:
       - ./db/mongo/secrets/:/usr/local/src
     command: sh /usr/local/src/generate-password.sh "/usr/local/src/db_root_password.txt"
@@ -15,7 +15,7 @@ services:
     container_name: mongodb-1
     depends_on:
       - generate-password
-    image: mongo:latest
+    image: mongo:8.0.3
     restart: always
     ports:
       - "27017:27017"
